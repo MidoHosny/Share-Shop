@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDBDDE2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".B_Ads.adsActivity"
+    tools:showIn="@layout/app_bar_offers">
+
+
+    <ProgressBar
+        android:id="@+id/progressBarOferrs"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/txtLoging_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="جارى التحميل..."
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/progressBarOferrs"/>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_Offers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <ListView
+            android:id="@+id/ListViewOffers"
+            android:layout_width="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbarSize="10dp"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

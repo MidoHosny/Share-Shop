@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.android.seen"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    // library
+    // Library design
+    implementation 'com.android.support:design:27.0.2'
+    // make simple display toast animation
+    implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    // for make image to circle
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    // Progress Bar animation library
+    implementation 'com.roger.catloadinglibrary:catloadinglibrary:1.0.4'
+    // facebook
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    // Google
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    // Displaying Images with the picassoImage Library
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    // notification
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/mail.jar')
+
+    // Library For Slider
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+    // Status Bar
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

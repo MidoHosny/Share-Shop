@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/back_"
+    tools:context=".A_Login.loginActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/backgroung_login"
+        android:layout_marginRight="36dp"
+        android:orientation="vertical" >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <EditText
+                android:id="@+id/TxtUserNameLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="16dp"
+                android:hint="اسم المستخدم"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                android:maxLength="10"
+                android:maxLines="4"
+                android:textColor="#3d3d3d"
+                android:gravity="right"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/TxtPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_pasword"
+                android:drawablePadding="16dp"
+                android:drawableStart="@drawable/ic_pasword"
+                android:ems="10"
+                android:hint="كلمه المرور"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:maxLines="4"
+                android:textColor="#3d3d3d"
+                android:gravity="right"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:buttonTint="#212121"
+                android:checked="true"
+                android:text="الاحتفاظ بكلمه المرور" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#3d3d3d" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="هل نسيت كلمه المرور؟"
+                android:textColor="#616161"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#3d3d3d" />
+
+            <TextView
+                android:id="@+id/textViewNewRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="تسجيل حساب جديد..."
+                android:textColor="#616161"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/btn_back"
+        android:text="تسجيل الدخول"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo" />
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp"
+        android:visibility="gone" />
+
+
+
+
+
+
+
+</RelativeLayout>

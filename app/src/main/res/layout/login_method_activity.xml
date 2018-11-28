@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_"
+    tools:context=".A_Login.LoginMethodActivity">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+
+     android:layout_marginLeft="36dp"
+     android:layout_marginRight="36dp">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="91dp"
+         android:gravity="center"
+         android:text="اختر تسجيل الدخول المفضل"
+         android:textColor="#fff"
+         android:textSize="32sp"
+         android:textStyle="bold"
+         android:layout_alignParentLeft="true" />
+     <ImageView
+         android:id="@+id/FacebookButtonMethod"
+         android:layout_width="wrap_content"
+         android:layout_height="50dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentStart="true"
+         android:layout_marginBottom="98dp"
+         app:srcCompat="@drawable/face"
+         android:layout_alignParentLeft="true" />
+
+     <ImageView
+     android:id="@+id/googleButtonMethod"
+     android:layout_width="wrap_content"
+     android:layout_height="50dp"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentStart="true"
+     android:layout_marginBottom="27dp"
+     app:srcCompat="@drawable/google"
+     android:layout_alignParentLeft="true" />
+
+     <ImageView
+         android:id="@+id/inta"
+         android:layout_width="wrap_content"
+         android:layout_height="50dp"
+         android:layout_above="@+id/FacebookButtonMethod"
+         android:layout_alignParentStart="true"
+         app:srcCompat="@drawable/aa"
+         android:layout_alignParentLeft="true" />
+</RelativeLayout>
+</RelativeLayout>

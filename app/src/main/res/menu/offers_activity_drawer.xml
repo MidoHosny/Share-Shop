@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_Offers"
+            android:icon="@drawable/ic_offers"
+            android:title="عروض"
+            />
+        <item
+            android:id="@+id/nav_Categories"
+            android:icon="@drawable/ic_category"
+            android:title="تصنيفات" />
+
+        <item
+            android:id="@+id/nav_Favorites"
+            android:icon="@drawable/ic_love"
+            android:title="المفضله" />
+
+    </group>
+
+    <item android:title=" ">
+        <menu>
+            <item
+                android:id="@+id/share_app"
+                android:icon="@drawable/ic_menu_share"
+                android:title="شارك التطبيق"
+                />
+            <item
+                android:id="@+id/nav_Contact"
+                android:icon="@drawable/ic_contact"
+                android:title="تواصل معنا" />
+            <item
+                android:id="@+id/nav_LogOut"
+                android:icon="@drawable/ic_exit"
+                android:title="تسجيل الخروج" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/daimajia_slider_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#77000000"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="right"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            style="@style/AndroidImageSlider_Corner_Oval_Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:gravity="bottom"
+            app:selected_color="@color/colorPrimary"
+            app:selected_height="15dp"
+            app:selected_padding_left="4dp"
+            app:selected_padding_right="4dp"
+            app:selected_width="15dp"
+            app:shape="oval"
+            android:layout_margin="8dp"
+            app:unselected_color="#fff"
+            app:unselected_height="8dp"
+            app:unselected_padding_left="2dp"
+            app:unselected_padding_right="2dp"
+            app:unselected_width="8dp" />
+
+    </LinearLayout>
+</RelativeLayout>

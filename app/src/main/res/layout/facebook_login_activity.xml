@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrond"
+    tools:context=".A_Login.FacebookLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="91dp"
+            android:gravity="center"
+            android:text="يمكنك التسجيل الان باستخدام حسابك على فيس بوك"
+            android:textColor="#fff"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true" />
+
+
+        <ImageView
+            android:id="@+id/FacebookLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="27dp"
+            app:srcCompat="@drawable/face"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>
