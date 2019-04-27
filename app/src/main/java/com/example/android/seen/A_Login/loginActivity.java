@@ -151,8 +151,8 @@ public class loginActivity extends AppCompatActivity {
 													   @Override
 													   public void run() {
 															try {
-																 final String username = "midohosny2250@gmail.com";
-																 final String password = "ilovemama";
+																 final String username = "name@company.com";
+																 final String password = "********";
 																 Properties props = new Properties();
 																 props.put("mail.smtp.auth", "true");
 																 props.put("mail.smtp.starttls.enable", "true");
