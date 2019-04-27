@@ -25,9 +25,11 @@ public class Database {
 		  try {
 			   Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
-			   conn = DriverManager.getConnection("jdbc:jtds:sqlserver://SQL5020.site4now.net/DB_A44F90_ourProject2" ,
-					   "DB_A44F90_ourProject2_admin" ,
-					   "Ourproject111");
+			   conn = DriverManager.getConnection("jdbc:jtds:sqlserver://
+				            HOST/
+				            DB_NAME" ,
+					   "USER_NAME" ,
+					   "PASSWORD");
 
 		  } catch (ClassNotFoundException e) {
 			   e.printStackTrace();
